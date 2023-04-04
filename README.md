@@ -1,4 +1,4 @@
-# ML_demo
+# ML-Algorithm-Examples
 
 Machine learning course experiment.
 
