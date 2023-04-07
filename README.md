@@ -1,5 +1,5 @@
 # ML-Algorithm-Examples
 
-Machine learning lab.
+Implement and summary of some basic machine learning algorithms.
 
-It is also the implement and summary of some basic machine learning algorithms.
+It's also my machine learning lab.
