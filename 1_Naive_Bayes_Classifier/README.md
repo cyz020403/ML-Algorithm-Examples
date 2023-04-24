@@ -35,7 +35,7 @@ $$
 P(\boldsymbol{x} \mid c)=\prod_{i=1}^d P\left(x_i \mid c\right)
 $$
 
-故满足上述推到过程。其中，$d$ 为属性数目， $x_i$ 为 $\boldsymbol{x}$ 在第 $i$ 个属性上的取值。
+故满足上述推到过程。其中， $d$ 为属性数目， $x_i$ 为 $\boldsymbol{x}$ 在第 $i$ 个属性上的取值。
 
 由于对于所有类别来说 $P(\boldsymbol{x})$ 取值相同，不影响最终概率的计算，因此朴素贝叶斯分类器的“函数”可以表示如下：
 
