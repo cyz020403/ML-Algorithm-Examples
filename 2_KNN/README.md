@@ -153,7 +153,7 @@ def getNeighbors(trainingSet, testInstance, k):
 - `testInstance`：测试数据，对于传入的当前实例，需要找到前 `k` 个“最相似”的训练数据，并返回。
 - `k`：指定了对于每个测试数据需要“看”的训练样本数。
 
-在方法中，对于当前的测试数据样本，循环处理训练集数据，并使用 `euclideanDistance` 方法计算当前测试样本到每个训练样本之间的距离，计算的结果存储到 `distances` 列表中，列表的维度长度为 $trainset \_ count$。
+在方法中，对于当前的测试数据样本，循环处理训练集数据，并使用 `euclideanDistance` 方法计算当前测试样本到每个训练样本之间的距离，计算的结果存储到 `distances` 列表中，列表的维度长度为 trainset_count。
 
 得到当前测试样本到各个训练样本的所有距离之后，对 `distance` 中的所有距离进行排序，并最终选取前 $k$ 个数据，判断为当前测试样本的邻居，即与其相似的数据。
 
