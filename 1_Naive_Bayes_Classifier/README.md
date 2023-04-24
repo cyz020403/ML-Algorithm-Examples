@@ -118,7 +118,7 @@ for group in groups:
 
 循环处理每一类别的数据，`priors[class_name] = len(group[1]) / len(train_data)` 计算了当前类别的先验概率。
 
-对于当前类别下样本的每一个属性，统计属性的名字并计算属性取值的平均值和方差。这里并没有完整计算出条件概率，而是转为计算在某一类别的先验条件下，$\boldsymbol{x}$ 中各个属性的取值平均值与方差。
+对于当前类别下样本的每一个属性，统计属性的名字并计算属性取值的平均值和方差。这里并没有完整计算出条件概率，而是转为计算在某一类别的先验条件下， $\boldsymbol{x}$ 中各个属性的取值平均值与方差。
 
 #### 定义朴素贝叶斯分类器方法
 
@@ -146,7 +146,7 @@ def predict_class(sample, priors, conditionals):
 
 - sample：某一个测试样本，实际存储的数据结构为一个向量，表示当前样本在各个属性上的取值。
 - priors：计算得到的先验概率 $P(c)$。
-- conditionals：每个特征的条件概率，实际存储的是在某一类别的先验条件下，$\boldsymbol{x}$ 中各个属性的取值平均值与方差。形式化的表示为：`conditionals[class_name][feature_name] = {'mean': mean, 'std_dev': std_dev}`。
+- conditionals：每个特征的条件概率，实际存储的是在某一类别的先验条件下， $\boldsymbol{x}$ 中各个属性的取值平均值与方差。形式化的表示为：`conditionals[class_name][feature_name] = {'mean': mean, 'std_dev': std_dev}`。
 
 定义 `probabilities` 用于存储当前测试样本属于每一个类别的后验概率。循环计算属于每一个类别的后验概率，此概率由以下公式计算：
 
